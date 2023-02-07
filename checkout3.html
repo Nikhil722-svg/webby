@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        height: 0px;
+        background-color: #e7f0f8;
+        /* font-family: Roboto, Arial, sans-serif; */
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    nav {
+        height: 100px;
+        /* background-color: #102030; */
+        /* background-color: #FFDE00, #FFB900, #102030; */
+        background: #102030;
+        display: flex;
+    }
+
+    .image {
+        margin-left: 8pc;
+        margin-top: 1pc;
+    }
+
+    #first {
+        position: absolute;
+        width: 550px;
+        height: 40px;
+        border: 0px;
+        border-radius: 2pc;
+        margin-top: 38px;
+        margin-left: 0pc;
+    }
+
+    .image1 {
+        position: absolute;
+        margin-left: 32pc;
+        margin-top: 39px;
+    }
+
+    .bt1 {
+        width: 90px;
+        height: 40px;
+        border: 0px;
+        color: #102030;
+        font-size: 16px;
+        border-radius: 2pc;
+        margin-top: 38px;
+        margin-left: 36pc;
+    }
+
+    .bt1:hover {
+        background-color: rgb(244, 244, 140);
+    }
+
+    .bt1:active {
+        color: white;
+        background-color: rgb(83, 166, 244);
+    }
+
+    .p1,
+    .p2 {
+        color: white;
+        font-size: 18px;
+        margin-left: 1pc;
+        margin-top: 48px;
+    }
+
+    .image2 {
+        margin-top: 2pc;
+        margin-left: 1pc;
+    }
+
+    .p8 {
+        color: white;
+        font-size: 20px;
+        margin-left: 0pc;
+        margin-top: 3pc;
+    }
+
+    .two {
+        position: absolute;
+        margin: 0px;
+        width: 1330px;
+        height: 700px;
+        margin-left: 100px;
+        background-color: white;
+    }
+
+    h1 {
+        font-family: serif;
+        text-align: center;
+        font-size: 40px;
+        line-height: 2;
+        color: #102030;
+        border-bottom: 1px solid #102030;
+    }
+
+    .two-one {
+        display: flex;
+    }
+
+    .two-one-1 {
+        width: 450px;
+        height: 480px;
+        border: 1px solid #102030;
+        margin-left: 9pc;
+        margin-top: 3pc;
+    }
+
+    .two-one-2 {
+        width: 450px;
+        height: 480px;
+        border: 1px solid #102030;
+        margin-left: 8pc;
+        margin-top: 3pc;
+    }
+
+    h3 {
+        font-family: serif;
+        margin: 0px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 2;
+        color: #102030;
+        border-bottom: 1px solid #102030;
+    }
+
+    input {
+        font-size: 20px;
+        width: 220px;
+        border: none;
+        border-bottom: 1px solid #102030;
+    }
+
+    .p11 {
+        font-size: 26px;
+        margin-left: 4pc;
+        margin-top: 3pc;
+    }
+
+    .p12 {
+        font-size: 26px;
+        margin-left: 4pc;
+        margin-top: 2pc;
+    }
+
+    .input3 {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .p13 {
+        font-size: 26px;
+        margin-left: 4pc;
+        margin-top: 2pc;
+    }
+
+    .p14 {
+        font-size: 26px;
+        margin-left: 4pc;
+        margin-top: 2pc;
+    }
+
+    .input4 {
+        width: 194px;
+        font-size: 20px;
+    }
+
+    .bt2 {
+        width: 180px;
+        height: 38px;
+        margin-top: 1pc;
+        margin-left: 8pc;
+        border-radius: 3pc;
+        font-size: 20px;
+        border: none;
+        background-color: rgb(119, 205, 252);
+        border: 1px solid #102030;
+    }
+
+    .bt2:active {
+        color: white;
+        background-color: #102030;
+    }
+
+    .p15 {
+        margin-top: 2pc;
+        margin-left: 4pc;
+        font-size: 26px;
+    }
+
+    .p16 {
+        margin-top: 1pc;
+        margin-left: 4pc;
+        font-size: 26px;
+    }
+
+    .p17 {
+        margin-top: 10px;
+        border-bottom: 1px solid #102030;
+    }
+
+    .p18 {
+        margin-top: 1pc;
+        margin-left: 4pc;
+        font-size: 26px;
+    }
+
+    .bt8 {
+        width: 160px;
+        height: 36px;
+        font-size: 15px;
+        margin-top: 0pc;
+        margin-left: 4pc;
+        background-color: rgb(119, 205, 252);
+        border: 1px solid #102030;
+        border-radius: 3pc;
+    }
+
+    .bt8:active {
+        background-color: #102030;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="one">
+        <nav>
+            <img src="logo.png" width="100px" height="80px" class="image">
+            <div>
+                <input type="search" id="first" placeholder="Search for Products, Brands and more:">
+                <img src="search-icon.png" width="39px" height="39px" class="image1">
+            </div>
+            <button class="bt1">Login</button>
+            <p class="p1">Customer Service</p>
+            <p class="p2">Gift Cards</p>
+            <div style="display: flex;">
+                <img src="cart.png" width="55px" height="55px" class="image2">
+                <p class="p8">Cart</p>
+            </div>
+        </nav>
+    </div>
+    <div class="two">
+        <h1>:Billing Section:</h1>
+        <div class="two-one">
+            <div class="two-one-1">
+                <h3>:Your Details:</h3>
+                <p class="p11">Name: <input type="text"></p>
+                <p class="p12">Phone: <input type="text"></p>
+                <p class="p13">Chair Id: <input type="text" id="first-value" placeholder="movi@3" class="input3"></p>
+                <p class="p14">Quantity: <input type="text" id="second-value" class="input4"></p>
+                <button class="bt2" onclick="res()">Bill</button>
+            </div>
+            <div class="two-one-2">
+                <h3>:Bill Details:</h3>
+                <p class="p15" id="res1">Amount ($) :</p>
+                <p class="p16" id="res2">SGST ($):</p>
+                <p class="p16" id="res5">CGST ($):</p>
+                <p class="p18" id="res4">Discount of 10%:</p>
+                <p class="p17"></p>
+                <p class="p18" id="res3">Grand-Total:</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function res() {
+        var x = document.getElementById("first-value").value;
+        var y = document.getElementById("second-value").value;
+        if (x == "movi@3") {
+            var sum = y * 28;
+            var sgst = (9 * sum) / 100;
+            var cgst = (9 * sum) / 100;
+            var i = sum + sgst + cgst;
+            var discount = (10 * i) / 100;
+            var Grand_Total = sum + sgst + cgst - discount;
+            document.getElementById("res1").innerHTML = "Amount  ($) :" + sum;
+            document.getElementById("res2").innerHTML = "SGST ($):" + sgst;
+            document.getElementById("res5").innerHTML = "CGST ($)" + cgst;
+            document.getElementById("res4").innerHTML = "Discount of 20%:" + discount;
+            document.getElementById("res3").innerHTML = "Grand-Total:" + Grand_Total;
+        }
+        else {
+            document.getElementById("res1").innerHTML = "Wrong Id";
+        }
+    }
+</script>
+
+</html>
